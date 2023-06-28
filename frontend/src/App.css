@@ -1,0 +1,78 @@
+/*equivalent to body*/
+
+.app {
+  width: auto;
+  height: auto;
+  color: #454955;
+  /*font color*/
+  /*image bg*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f3eff5;
+}
+
+.centered {
+  text-align: center;
+}
+
+.sign {
+  color: #454955;
+  background-image: url("images/cover1.webp");
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signForm {
+  background-color: #f3eff5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 700px;
+
+  @media screen and (min-width: 1440px) {
+    height: 1000px;
+  }
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  border-style: solid;
+  border-color: #454955;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 250px;
+  margin: 4px 2px;
+}
+
+button[type="submit"],
+button.submit {
+  background-color: #454955;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 250px;
+}
+
+button[type="button"] {
+  background-color: #72b01d;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 250px;
+}

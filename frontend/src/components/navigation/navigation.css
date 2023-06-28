@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 8vh;
+  background-color: #454955;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.nav_toggler div {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(255, 255, 255);
+  transition: 0.4s ease-in;
+}
+
+.nav_toggler {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_toggler {
+    display: block;
+  }
+  .nav_menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    width: 50%;
+    height: 93vh;
+    background: #272932;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: 0.5s ease-in;
+  }
+}
+
+.nav_active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
